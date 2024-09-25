@@ -42,7 +42,10 @@ export default function Home() {
             </Button>
           </Link>
         </div>
+
       </div>
+
+      
     </div>
   );
 }

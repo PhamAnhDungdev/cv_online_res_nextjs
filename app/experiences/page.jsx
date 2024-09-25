@@ -1,8 +1,10 @@
 import React from 'react'
 
-const Experiences = () => {
+const Experiences = ({ hidden }) => {
   return (
-    <div>Experiences</div>
+    <div className={`flex ${hidden ? 'hidden' : 'block'}`}>
+      Experiences
+    </div>
   )
 }
 

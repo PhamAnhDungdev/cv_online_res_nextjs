@@ -32,7 +32,9 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex justify-between fixed z-50 w-full first-letter:px-6 py-4 lg:px-10">
+    <div className="flex justify-between fixed z-50 w-full first-letter:px-6 py-4 lg:px-10
+        top-0 left-0 h-16 bg-white bg-opacity-100 shadow-md
+    ">
       <Link href="/" className="flex items-center gap-1">
         <Image
           src="/images/profile.jpg"
