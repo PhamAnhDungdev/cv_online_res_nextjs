@@ -52,7 +52,7 @@ const Aboutme = () => {
 
       {/* <div className="my-2 p-10 md:bg-gray-50 rounded-sm"></div> */}
 
-      <div className="grid grid-cols-12 gap-4 p-10 md:bg-gray-50 rounded-sm mt-10">
+      <div className="grid grid-cols-12 gap-4 p-10 max-sm:p-4 md:bg-gray-50 rounded-sm mt-10">
         <div className="col-span-3 max-sm:col-span-12 flex md:flex-col max-sm:justify-around pr-2 md:border-r-2 max-sm:border-b-2 border-gray-400">
           <Button
             className={`relative hover:text-white ${
@@ -90,7 +90,7 @@ const Aboutme = () => {
             <p className="absolute left-16 font-semibold max-sm:hidden">Skills</p>
           </Button>
         </div>
-        <div className="col-span-9 flex flex-col max-sm:-ml-5">
+        <div className="col-span-9 max-sm:col-span-12 flex flex-col max-sm:-ml-5">
           <div className="flex">
             <OverviewInformations hidden={hiddenStates.overview} />
           </div>

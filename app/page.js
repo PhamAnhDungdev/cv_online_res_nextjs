@@ -4,17 +4,36 @@ import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Curriculum Vitae",
+  description: "CV - Pham Anh Dung dev",
+  icons: {
+    icon: '/icons/logo.svg',
+    shortcut: '/icons/logo.svg'
+  }
+};
+
+
+
 export default function Home() {
   return (
     <div className="flex justify-evenly max-sm:flex-col mt-16">
 
-      <div className="flex items-center justify-center">
+      <div className="relative flex items-center justify-center">
+        {/* <Image 
+          src=''
+          // src='/icons/logo.svg'
+          width={450}
+          height={450}
+          alt='Profile personal image'
+          className="absolute rounded-full border-8 border-green-200 md:hidden mt-5 ml-9 bg-orange-400"
+        /> */}
         <Image
           src='/images/dungpham.jpg'
           width={450}
           height={450}
           alt='Profile personal image'
-          className="rounded-full border-8 border-orange-200 "
+          className="rounded-full border-8 border-orange-200 max-sm:border-blue-200 z-50"
         />
       </div>
 
@@ -45,7 +64,7 @@ export default function Home() {
 
       </div>
 
-      
+
     </div>
   );
 }

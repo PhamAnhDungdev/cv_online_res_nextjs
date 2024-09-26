@@ -10,12 +10,12 @@ const Skills = ({ hidden }) => {
     >
       <div className="flex items-center text-3xl font-bold space-x-4">
         <p className="font-bold text-orange-400">|</p>
-        <span>Front-End</span>
+        <span className="max-sm:text-bold max-sm:text-2xl">Front-End</span>
       </div>
 
-      <div className="flex flex-col space-y-4 w-full">
+      <div className="flex flex-col space-y-4 w-full max-sm:ml-3">
         <div className="flex max-sm:flex-col justify-around w-full">
-          <div className="flex items-center my-10 w-2/5 h-28 bg-gray-300 rounded-lg">
+          <div className="flex items-center md:my-10 w-2/5 max-sm:w-full h-28 bg-gray-300 rounded-lg">
             <Image
               src="/skillsfw/js.png"
               width={100}
@@ -29,7 +29,7 @@ const Skills = ({ hidden }) => {
             </div>
           </div>
 
-          <div className="flex items-center my-10 w-2/5 h-28 bg-gray-300 rounded-lg">
+          <div className="flex items-center my-10 w-2/5 max-sm:w-full h-28 bg-gray-300 rounded-lg">
             <Image
               src="/skillsfw/nextjs.png"
               width={100}
@@ -45,9 +45,9 @@ const Skills = ({ hidden }) => {
         </div>
       </div>
 
-      <div className="flex flex-col space-y-4 w-full">
-        <div className="flex max-sm:flex-col justify-around w-full -mt-14">
-          <div className="flex items-center my-10 w-2/5 h-28 bg-gray-300 rounded-lg">
+      <div className="flex flex-col space-y-4 w-full max-sm:ml-3">
+        <div className="flex max-sm:flex-col justify-around w-full md:-mt-14">
+          <div className="flex items-center md:my-10 w-2/5 max-sm:w-full  h-28 bg-gray-300 rounded-lg">
             <Image
               src="/skillsfw/reactjs.png"
               width={100}
@@ -61,7 +61,7 @@ const Skills = ({ hidden }) => {
             </div>
           </div>
 
-          <div className="flex items-center my-10 w-2/5 h-28 bg-gray-300 rounded-lg">
+          <div className="flex items-center my-10 w-2/5 max-sm:w-full  h-28 bg-gray-300 rounded-lg">
             <Image
               src="/skillsfw/tailwind.png"
               width={100}
@@ -79,12 +79,12 @@ const Skills = ({ hidden }) => {
 
       <div className="flex items-center text-3xl font-bold space-x-4">
         <p className="font-bold text-orange-400">|</p>
-        <span>Back-End</span>
+        <span className="max-sm:text-bold max-sm:text-2xl">Back-End</span>
       </div>
 
-      <div className="flex flex-col space-y-4 w-full">
+      <div className="flex flex-col space-y-4 w-full max-sm:ml-3">
         <div className="flex max-sm:flex-col justify-around w-full">
-          <div className="flex items-center my-10 w-2/5 h-28 bg-gray-300 rounded-lg">
+          <div className="flex items-center md:my-10 w-2/5 max-sm:w-full  h-28 bg-gray-300 rounded-lg">
             <Image
               src="/skillsfw/java.png"
               width={100}
@@ -98,7 +98,7 @@ const Skills = ({ hidden }) => {
             </div>
           </div>
 
-          <div className="flex items-center my-10 w-2/5 h-28 bg-gray-300 rounded-lg">
+          <div className="flex items-center my-10 w-2/5 max-sm:w-full  h-28 bg-gray-300 rounded-lg">
             <Image
               src="/skillsfw/csharp.png"
               width={100}
@@ -116,12 +116,12 @@ const Skills = ({ hidden }) => {
 
       <div className="flex items-center text-3xl font-bold space-x-4">
         <p className="font-bold text-orange-400">|</p>
-        <span>Database</span>
+        <span className="max-sm:text-bold max-sm:text-2xl">Database</span>
       </div>
 
-      <div className="flex flex-col space-y-4 w-full">
+      <div className="flex flex-col space-y-4 w-full max-sm:ml-3">
         <div className="flex max-sm:flex-col justify-around w-full">
-          <div className="flex items-center my-10 w-2/5 h-28 bg-gray-300 rounded-lg">
+          <div className="flex items-center md:my-10 w-2/5 max-sm:w-full  h-28 bg-gray-300 rounded-lg">
             <Image
               src="/skillsfw/mysql.png"
               width={100}
@@ -135,7 +135,7 @@ const Skills = ({ hidden }) => {
             </div>
           </div>
 
-          <div className="flex items-center my-10 w-2/5 h-28 bg-gray-300 rounded-lg">
+          <div className="flex items-center my-10 w-2/5 max-sm:w-full  h-28 bg-gray-300 rounded-lg">
             <Image
               src="/skillsfw/sqlserver.png"
               width={100}
@@ -153,36 +153,36 @@ const Skills = ({ hidden }) => {
 
       <div className="flex items-center text-3xl font-bold space-x-4">
         <p className="font-bold text-orange-400">|</p>
-        <span>Others tools</span>
+        <span className="max-sm:text-bold max-sm:text-2xl">Others tools</span>
       </div>
 
-      <div className="flex flex-col space-y-4 w-full">
+      <div className="flex flex-col space-y-4 w-full max-sm:ml-3">
         <div className="flex max-sm:flex-col justify-around w-full">
-          <div className="flex items-center my-10 w-2/5 h-28 bg-gray-300 rounded-lg">
+          <div className="flex items-center md:my-10 w-2/5 max-sm:w-full  h-28 bg-gray-300 rounded-lg">
             <Image
-              src="/skillsfw/js.png"
+              src="/skillsfw/git.png"
               width={100}
               height={100}
               alt="Skill 1"
-              className="ml-5 border-4"
+              className="ml-5 border-4 rounded-full bg-white"
             />
             <div className="flex flex-col ml-5 -mt-5">
-              <h1 className="text-xl font-semibold">JavaScript</h1>
-              <p className="text-center">Basic skill with JavaScript</p>
+              <h1 className="text-xl font-semibold">Git</h1>
+              <p className="text-center">Good skill with Git</p>
             </div>
           </div>
 
-          <div className="flex items-center my-10 w-2/5 h-28 bg-gray-300 rounded-lg">
+          <div className="flex items-center my-10 w-2/5 max-sm:w-full  h-28 bg-gray-300 rounded-lg">
             <Image
-              src="/skillsfw/js.png"
+              src="/skillsfw/postman.png"
               width={100}
               height={100}
               alt="Skill 2"
-              className="ml-5 border-4"
+              className="ml-5 border-4 rounded-full bg-white"
             />
             <div className="flex flex-col ml-5 -mt-5">
-              <h1 className="text-xl font-semibold">React</h1>
-              <p className="text-center">Intermediate skill with React</p>
+              <h1 className="text-xl font-semibold">Postman</h1>
+              <p className="text-center">Basic skill with React</p>
             </div>
           </div>
         </div>

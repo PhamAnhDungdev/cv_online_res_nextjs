@@ -1,3 +1,4 @@
+
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 
@@ -6,6 +7,7 @@ export const metadata = {
   description: "CV - Pham Anh Dung dev",
   icons: {
     icon: '/icons/logo.svg',
+    shortcut: '/icons/logo.svg',
   }
 };
 
