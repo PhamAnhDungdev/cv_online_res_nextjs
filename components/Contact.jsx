@@ -52,7 +52,7 @@ const Contact = ({ hidden }) => {
           </div>
 
           <div className="flex items-center text-base font-bold">
-            <Link href="https://github.com/trandung9900" passHref>
+            <Link href="#" passHref>
               <p className="ml-4">098 1153 101</p>
             </Link>
           </div>
@@ -69,7 +69,7 @@ const Contact = ({ hidden }) => {
           </div>
 
           <div className="flex items-center text-base font-bold">
-            <Link href="https://github.com/PhamAnhDung.Dev19" passHref>
+            <Link href="https://facebook.com/PhamAnhDung.Dev19" passHref>
               <p className="ml-4">Anh Dung Pham</p>
             </Link>
           </div>

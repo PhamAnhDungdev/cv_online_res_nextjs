@@ -53,41 +53,45 @@ const Aboutme = () => {
       {/* <div className="my-2 p-10 md:bg-gray-50 rounded-sm"></div> */}
 
       <div className="grid grid-cols-12 gap-4 p-10 max-sm:p-4 md:bg-gray-50 rounded-sm mt-10">
-        <div className="col-span-3 max-sm:col-span-12 flex md:flex-col max-sm:justify-around pr-2 md:border-r-2 max-sm:border-b-2 border-gray-400">
+        <div className="col-span-3 max-sm:col-span-12 flex md:flex-col max-sm:justify-around pr-2 md:border-r-2 max-sm:border-b-2 border-gray-900">
           <Button
-            className={`relative hover:text-white ${
+            className={`relative max-sm:w-14 max-sm:h-14 max-sm:rounded-full hover:text-white ${
               selectedButton === "overview"
                 ? "bg-black text-white"
                 : "bg-gray-100 text-black"
             } pointer-events-auto rounded-none my-[1px] group`}
             onClick={() => handleButtonClick("overview")}
           >
-            <CircleUserRound className="absolute md:left-5" />
+            <CircleUserRound className="absolute md:left-5 max-sm:w-9 max-sm:h-9" />
             <p className="absolute left-16 font-semibold max-sm:hidden">
               Overview information
             </p>
           </Button>
           <Button
-            className={`relative hover:text-white ${
+            className={`relative max-sm:w-14 max-sm:h-14 max-sm:rounded-full hover:text-white ${
               selectedButton === "contact"
                 ? "bg-black text-white"
                 : "bg-gray-100 text-black"
             } pointer-events-auto border-none my-[1px] rounded-none group`}
             onClick={() => handleButtonClick("contact")}
           >
-            <ContactRound className="absolute md:left-5" />
-            <p className="absolute left-16 font-semibold max-sm:hidden">Contact</p>
+            <ContactRound className="absolute md:left-5  max-sm:w-9 max-sm:h-9" />
+            <p className="absolute left-16 font-semibold max-sm:hidden">
+              Contact
+            </p>
           </Button>
           <Button
-            className={`relative hover:text-white ${
+            className={`relative max-sm:w-14 max-sm:h-14 max-sm:rounded-full hover:text-white ${
               selectedButton === "skills"
                 ? "bg-black text-white"
                 : "bg-gray-100 text-black"
             } pointer-events-auto border-none my-[1px] rounded-none group`}
             onClick={() => handleButtonClick("skills")}
           >
-            <ListChecks className="absolute md:left-5" />
-            <p className="absolute left-16 font-semibold max-sm:hidden">Skills</p>
+            <ListChecks className="absolute md:left-5  max-sm:w-9 max-sm:h-9" />
+            <p className="absolute left-16 font-semibold max-sm:hidden">
+              Skills
+            </p>
           </Button>
         </div>
         <div className="col-span-9 max-sm:col-span-12 flex flex-col max-sm:-ml-5">
