@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Curriculum Vitae",
+  title: "Pham Anh Dung",
   description: "CV - Pham Anh Dung dev",
   icons: {
     icon: '/icons/logo.svg',
@@ -33,7 +33,7 @@ export default function Home() {
           width={450}
           height={450}
           alt='Profile personal image'
-          className="rounded-full border-8 border-orange-200 max-sm:border-blue-200 z-50"
+          className="rounded-full border-8 border-orange-300 max-sm:border-blue-200 z-50"
         />
       </div>
 
@@ -46,17 +46,18 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="items-start my-3 max-w-[650px] max-sm:mx-6">
+        <div className="items-start my-3 max-w-[650px] max-sm:mx-5">
           <p className="text-lg">
-            Student intern specializing in full-stack software application development.
-            My skills include programming with ReactJS and NextJS for frontend development,
-            and C# and Java for backend services.
+            Software Development Engineer specializing in full-stack
+            software application development. My skills include programming 
+            using frameworks with JavaScript for frontend development, 
+            and .NET and Java for Backend services.
           </p>
         </div>
 
         <div className="flex justify-end my-3 w-full">
           <Link href="/aboutme" passHref>
-            <Button className="bg-white border-none text-black hover:bg-orange-600 hover:text-white transition duration-200 flex items-center">
+            <Button className="bg-white max-sm:bg-orange-600 border-none text-black hover:bg-orange-600 hover:text-white transition duration-200 flex items-center">
               <ChevronRight className="h-4 w-4" />
             </Button>
           </Link>
