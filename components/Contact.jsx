@@ -47,7 +47,7 @@ const Contact = ({ hidden }) => {
         <div className="flex flex-col space-y-5 ml-4">
           <div className="flex items-center text-base font-bold">
             <Link href="https://github.com/PhamAnhDungdev" passHref>
-              <p className="ml-4">phamdung2672004@gmail.com</p>
+              <p className="ml-4">dungdev90@gmail.com</p>
             </Link>
           </div>
 
