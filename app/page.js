@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import Avatar from "@/components/Avatar";
+
 
 export const metadata = {
   title: "Pham Anh Dung",
@@ -18,23 +20,8 @@ export const metadata = {
 export default function Home() {
   return (
     <div className="flex justify-evenly max-sm:flex-col mt-16">
-
       <div className="relative flex items-center justify-center">
-        {/* <Image 
-          src=''
-          // src='/icons/logo.svg'
-          width={450}
-          height={450}
-          alt='Profile personal image'
-          className="absolute rounded-full border-8 border-green-200 md:hidden mt-5 ml-9 bg-orange-400"
-        /> */}
-        <Image
-          src='/images/dungpham.jpg'
-          width={450}
-          height={450}
-          alt='Profile personal image'
-          className="rounded-full border-8 border-orange-300 max-sm:border-blue-200 z-50"
-        />
+        <Avatar isOnline={false} imageUrl="/images/dungpham.jpg" width={450} height={450}/>
       </div>
 
       <div className="flex flex-col md:mt-20 max-sm:mt-10 max-sm:items-center">

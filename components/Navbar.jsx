@@ -5,18 +5,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { navbarLinks } from "@/constants";
 import { usePathname } from "next/navigation";
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-  SheetClose,
-} from "@/components/ui/sheet";
 
-import { cn } from "@/lib/utils";
 import MobileNav from "./MobileNav";
+import Avatar from "@/components/Avatar";
 
 const Navbar = () => {
   const [selectedItem, setSelectedItem] = useState(null);
@@ -32,17 +23,13 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex justify-between fixed z-50 w-full first-letter:px-6 py-4 lg:px-10
+    <div
+      className="flex justify-between fixed z-50 w-full first-letter:px-6 py-4 lg:px-10
         top-0 left-0 h-16 bg-white bg-opacity-100 shadow-md
-    ">
+    "
+    >
       <Link href="/" className="flex items-center gap-1">
-        <Image
-          src="/images/profile.jpg"
-          width={45}
-          height={45}
-          alt="CV logo"
-          className="max-sm:w-10 max-sm:h-10 max-sm:ml-4 rounded-full border-2 border-gray-800"
-        />
+        <Avatar isOnline={false} imageUrl="/images/dungpham.jpg" width={45} height={45}/>
         <p className="text-[26px] font-extrabold text-gray-500 max-sm:hidden">
           {/* Tiêu đề */}
         </p>
@@ -65,14 +52,14 @@ const Navbar = () => {
                 width={25}
                 height={25}
                 alt={item.label}
-                className={`max-sm:w-10 max-sm:h-10 transition-transform duration-300 ease-in-out ${
+                className={`max-sm:w-10 max-sm:h-10 transition-transform duration-500 ease-in-out ${
                   selectedItem === index
                     ? "transform scale-110"
                     : "hover:scale-110"
                 }`}
               />
               <p
-                className={`text-md font-semibold ${
+                className={`text-md font-medium ${
                   selectedItem === index ? "text-white" : "text-black"
                 } transition-colors duration-300 ease-in-out hover:text-gray-800`}
               >
