@@ -1,27 +1,29 @@
+import { Blocks, CircleEllipsis, ContactRound, House, PackageCheck } from "lucide-react";
+
 export const navbarLinks = [
     {
         label: 'Home',
         route: '/',
-        imgUrl: '/icons/home.svg',
+        icon: House,
     },
     {
         label: 'About me',
         route: '/aboutme',
-        imgUrl: '/icons/user.svg',
+        icon: ContactRound,
     },
     {
         label: 'Experiences',
         route: '/experiences',
-        imgUrl: '/icons/experience.svg',
+        icon: PackageCheck,
     },
     {
         label: 'Projects',
         route: '/projects',
-        imgUrl: '/icons/project.svg',
+        icon: Blocks,
     },
     {
         label: 'Others',
         route: '/others',
-        imgUrl: '/icons/others.svg',
+        icon: CircleEllipsis,
     },
 ];

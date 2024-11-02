@@ -10,7 +10,6 @@ export const metadata = {
     shortcut: '/icons/logo.svg',
   }
 };
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
